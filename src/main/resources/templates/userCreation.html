@@ -9,31 +9,35 @@
 <div class="profile">
     <form action="profil2.html">
         <label for="Name">Name:</label><br>
-        <input type="text" id="Name" name="Name" value="" required><br>
+        <input type="text" id="Name" name="Name" value="" placeholder="Lisa" required> <br>
 
-        <label for="lastName">Last Name:</label><br>
-        <input type="text" id="lastName" name="lastName" value="" required><br>
+        <label for="lastName">Last name:</label><br>
+        <input type="text" id="lastName" name="lastName" value="" placeholder="Johnson" required> <br>
 
         <label for="Age">Age:</label><br>
-        <input type="text" id="Age" name="Age" value="" required> <br>
+        <input type="date" id="Age"  name="Age" required><br>
 
         <label for="Sex">Sex:</label><br>
-        <input type="text" id="Sex" name="Sex" value="" required> <br>
+        <input type="text" id="Sex" name="Sex" value="" placeholder="Male/female/confused" required> <br>
 
-        <label for="petName">Pet Name:</label><br>
-        <input type="text" id="petName" name="petName" value="" required> <br>
+        <label for="eMail">Email</label><br>
+        <input type="eMail" id="eMail" placeholder="Lisajohnson@petmail.com"
+               pattern=".+@globex.com" required> <br>
+
+        <label for="petName">Pet name:</label><br>
+        <input type="text" id="petName" name="petName" placeholder="Spike" value="" required> <br>
 
         <label for="Pet">Pet:</label><br>
-        <input type="text" id="Pet" name="Pet" value="" required> <br>
+        <input type="text" id="Pet" name="Pet" placeholder="Dog" value="" required> <br>
 
         <label for="petAge">Pet age:</label><br>
-        <input type="text" id="petAge" name="petAge" value="" required> <br>
+        <input type="date" id="petAge"  name="petAge" required> <br>
 
-        <label for="petRace">Pet Race:</label><br>
-        <input type="text" id="petRace" name="petRace" value="" required> <br>
+        <label for="petRace">Pet race:</label><br>
+        <input type="text" id="petRace" name="petRace" placeholder="Chihuahua" value="" required> <br>
 
         <label for="petSex">Pet sex:</label><br>
-        <input type="text" id="petSex" name="petSex" value="" required> <br>
+        <input type="text" id="petSex" name="petSex" placeholder="Male/female/confused" value="" required> <br>
 
         <input type="submit" value="Submit">
     </form>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <link rel="stylesheet" type= "text/css" href="/css.css">
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+        .footer {
+            left: 0;
+            text-align: center;
+            bottom: 0;
+            width: 100%;
+            display: inline-block;
+            padding: 10px;
+            background-color: #90bb90;
+        }
+        a {
+            color: black;
+            text-decoration: none;
+        }
+
+        a:visited{
+            color: black;
+            text-decoration: none;
+        }
+
+    </style>
+</head>
+<body>
+
+<div th:fragment="footer">
+    <div class="footer">
+        <a href="/privacyPolicy">Privacy policy</a> - <a href="/reportUser">Report user</a>
+        <p style="font-size: 12px" >Copyright xxxx| All Rights Reserved | xxxxxxxx | xxxxxxx | xxxx@xxxxx.com</p>
+    </div>
+</div>
+</body>
+</html>

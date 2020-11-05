@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+
+        .container{
+            clear:both;
+            overflow:auto;
+            background-color: #90bb90;
+        }
+
+        nav{
+
+            float:right;
+            margin-right: 50px;
+        }
+
+        .logo img{
+            float:left;
+            color: #90bb90;
+
+
+        }
+
+        ul li{
+            display: inline-block; padding:10px;
+            font-size:20px;
+            margin-right: 40px;
+            margin-top: 60px;
+        }
+        ul li a {
+            color: black;
+            text-decoration: none;
+        }
+
+        ul li:visited{
+            color: black;
+            text-decoration: none;
+        }
+
+
+    </style>
+
+</head>
+<body>
+<div th:fragment="header">
+    <div class="container">
+        <div class="logo">
+            <a href="/home"><img src="/images/hund.png" alt="logo" height="200px" width="400"/></a>
+        </div>
+        <nav>
+            <ul>
+
+            </ul>
+        </nav>
+    </div>
+    <hr />
+</div>
+</body>
+</html>

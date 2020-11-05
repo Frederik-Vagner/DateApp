@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+
+<head>
+    <link rel="stylesheet" type= "text/css" href="/css.css">
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+
+    .flexbox-container {
+    display: flex;
+    flex-wrap: wrap;
+
+
+    }
+    .flexbox-item {
+    width: 300px;
+    height: 400px;
+    margin: 10px;
+    background-color: #578e57;
+    opacity: 90%;
+    text-align: center;
+    border-radius: 14px;
+    }
+    </style>
+</head>
+<body>
+<div th:replace="headerUser">...</div>
+<h3>Beskeder</h3>
+<div class="flexbox-container">
+    <div class="flexbox-item"><h2>Modtaget</h2></div>
+    <div class="flexbox-item"><h2>Sendt</h2></div>
+
+</div>
+<div th:replace="footer">...</div>
+</body>
+</html>

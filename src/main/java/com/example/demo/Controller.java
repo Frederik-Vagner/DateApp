@@ -1,7 +1,6 @@
 package com.example.demo;
 
 import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.ui.Model;
 
 @org.springframework.stereotype.Controller
 public class Controller {
@@ -49,6 +48,8 @@ public class Controller {
         return ("profile");
     }
 
+
+
     //footer
 
     @GetMapping("/privacyPolicy")
@@ -56,6 +57,11 @@ public class Controller {
         return ("privacyPolicy");
     }
 
+    @GetMapping("/userCreation")
+    public String userCreation() {return ("userCreation"); }
+
+    @GetMapping("/profilenen")
+    public String profilenen() {return ("profilenen"); }
 
 }
 

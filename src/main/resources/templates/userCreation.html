@@ -3,45 +3,85 @@
 <head>
     <meta charset="UTF-8">
     <title>User Creation</title>
-</head>
+
+    <link rel="stylesheet" href="css.css">
+
+    </head>
 <body>
 
 <div class="profile">
-    <form action="profil2.html">
-        <label for="Name">Name:</label><br>
-        <input type="text" id="Name" name="Name" value="" placeholder="Lisa" required> <br>
+    <form action="profilenen.html">
 
-        <label for="lastName">Last name:</label><br>
-        <input type="text" id="lastName" name="lastName" value="" placeholder="Johnson" required> <br>
+        <div class="kasse">
 
-        <label for="Age">Age:</label><br>
-        <input type="date" id="Age"  name="Age" required
-               min="1960-11-13" max="2002-11-13"><br> <!-- mindst 18 aar for at oprette sig-->
+            <label for="Name">Name:</label><br>
+            <input type="text" id="Name" name="Name" value="" placeholder="Lisa" required><br>
+
+        </div>
+
+        <div class="kasse">
+
+            <label for="lastName">Last name:</label><br>
+            <input type="text" id="lastName" name="lastName" value="" placeholder="Johnson" required><br>
 
 
-        <label for="Sex">Sex:</label><br>
-        <input type="text" id="Sex" name="Sex" value="" placeholder="Male/Female/Confused" required> <br>
+        </div>
 
-        <label for="eMail">Email</label><br>
-        <input type="eMail" id="eMail" placeholder="Lisajohnson@petmail.com"
-               pattern=".+@globex.com" required> <br>
+        <div class="kasse">
 
-        <label for="petName">Pet name:</label><br>
-        <input type="text" id="petName" name="petName" placeholder="Spike" value="" required> <br>
+            <label for="Age">Age:</label><br>
+            <input type="date" id="Age"  name="Age" required
+                   min="1960-11-13" max="2002-11-13"><br>
 
-        <label for="Pet">Pet:</label><br>
-        <input type="text" id="Pet" name="Pet" placeholder="Dog" value="" required> <br>
+        </div>
 
-        <label for="petAge">Pet age:</label><br>
-        <input type="date" id="petAge"  name="petAge" required> <br>
 
-        <label for="petRace">Pet race:</label><br>
-        <input type="text" id="petRace" name="petRace" placeholder="Chihuahua" value="" required> <br>
+        <div class="kasse">
 
-        <label for="petSex">Pet sex:</label><br>
-        <input type="text" id="petSex" name="petSex" placeholder="Male/Female/Confused" value="" required> <br>
+            <label for="Sex">Sex:</label><br>
+            <input type="text" id="Sex" name="Sex" value="" placeholder="Male/female/confused" required><br>
+        </div>
 
-        <input type="submit" value="Submit">
+        <div class="kasse">
+
+            <label for="eMail">Email</label><br>
+
+            <input type="email" id="email" placeholder="Lisajohnson@petmail.com"
+                   pattern=".+@globex.com" required><br>
+
+        </div>
+
+        <div class="kasse">
+
+            <label for="petName">Pet name:</label><br>
+            <input type="text" id="petName" name="petName" placeholder="Spike" value=""required><br>
+
+        </div>
+
+        <div class="kasse">
+            <label for="Pet">Pet:</label><br>
+            <input type="text" id="Pet" name="Pet" placeholder="Dog" value=""required><br>
+        </div>
+
+        <div class="kasse">
+            <label for="petAge">Pet age:</label><br>
+            <input type="date" id="petAge"  name="petAge" required><br>
+        </div>
+
+        <div class="kasse">
+            <label for="petRace">Pet race:</label><br>
+            <input type="text" id="petRace" name="petRace" placeholder="Chihuahua" value=""required><br>
+        </div>
+
+        <div class="kasse">
+            <label for="petSex">Pet sex:</label><br>
+            <input type="text" id="petSex" name="petSex" placeholder="Male/female/confused" value=""required><br>
+        </div>
+
+        <div class="kasse kassesubmit" >
+            <input class="knap" type="submit" value="Opret">
+        </div>
+
     </form>
 </div>
 

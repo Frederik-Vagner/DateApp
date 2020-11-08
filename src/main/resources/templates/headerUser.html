@@ -4,60 +4,70 @@
     <meta charset="UTF-8">
     <title></title>
     <style>
-
         .container{
-            clear:both;
-            overflow:auto;
-            background-color: #90bb90;
-        }
-
-        nav{
-
-            float:right;
-            margin-right: 50px;
+            height: 200px;
+            width: 100%;
         }
 
         .logo img{
             float:left;
             color: #90bb90;
-
+        }
+        .dropbtn {
+            background-color: #578e57;
+            padding: 20px 30px;
+            font-size: 30px;
+            border: none;
+            margin-right: 70px;
+            margin-top: 70px;
+            border-radius: 14px;
 
         }
 
-        ul li{
-            display: inline-block; padding:10px;
-            font-size:20px;
-            margin-right: 40px;
-            margin-top: 60px;
+        .dropdown {
+            position: relative;
+            display: inline-block;
+            float: right;
         }
-        ul li a {
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f1f1f1;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+        }
+
+        .dropdown-content a {
             color: black;
+            padding: 12px 16px;
             text-decoration: none;
+            display: block;
         }
 
-        ul li:visited{
-            color: black;
-            text-decoration: none;
-        }
+        .dropdown-content a:hover {background-color: #ddd;}
 
+        .dropdown:hover .dropdown-content {display: block;}
 
+        .dropdown:hover .dropbtn {background-color: #3e8e41;}
     </style>
-
 </head>
 <body>
-<div th:fragment="header">
-    <div class="container">
-        <div class="logo">
-            <a href="/home"><img src="/images/hund.png" alt="logo" height="200px" width="400"/></a>
-        </div>
-        <nav>
-            <ul>
-                <li><a href="/profile">Profile</a></li>
-
-            </ul>
-        </nav>
+<div class="container">
+    <div class="logo">
+        <a href="/home"><img src="/images/hund.png" alt="logo" height="200px" width="400"/></a>
     </div>
-    <hr />
+<div class="dropdown">
+    <button class="dropbtn">Frederik Pedersen</button>
+    <div class="dropdown-content">
+        <a href="/profile">Se profil</a>
+        <a href="/editProfile">Rediger profil</a>
+        <a href=/sendMessage>Send besked</a>
+        <a href="/findMatch">Find match</a>
+    </div>
 </div>
+</div>
+
 </body>
 </html>

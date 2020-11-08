@@ -34,19 +34,19 @@ public class Controller {
 
     //bruger
 
-    @GetMapping("/findUsers")
-    public String findUsers() {
-        return ("findUsers");
+    @GetMapping("/findMatch")
+    public String findMatch() {
+        return ("findMatch");
     }
 
-    @GetMapping("/candidateList")
-    public String candidateList() {
-        return ("candidateList");
+    @GetMapping("/editProfile")
+    public String editProfile() {
+        return ("editProfile");
     }
 
-    @GetMapping("/messages")
-    public String messages() {
-        return ("messages");
+    @GetMapping("/sendMessage")
+    public String sendMessage() {
+        return ("sendMessage");
     }
 
     @GetMapping("/profile")
@@ -58,9 +58,9 @@ public class Controller {
 
     //footer
 
-    @GetMapping("/privacyPolicy")
-    public String privacyPolicy() {
-        return ("privacyPolicy");
+    @GetMapping("/privatLivsPolitik")
+    public String privatLivsPolitik() {
+        return ("privatLivsPolitik");
     }
 
     @GetMapping("/userCreation")

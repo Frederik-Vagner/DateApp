@@ -1,11 +1,49 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Login</title>
+
+    <link rel="stylesheet" href="css.css">
+
 </head>
 <body>
-<p>heyyyy</p>
 
+        <h1>Login</h1>
+
+        <div class="profile">
+            <form action="profilenen.html">
+
+                <div class="kasse">
+
+                    <label for="eMail">Email</label><br>
+
+                    <input type="email" id="email"
+                           pattern=".+@globex.com" required><br>
+                </div>
+
+                <div class="kasse">
+
+                    <label for="Password">Password</label><br>
+
+                    <input type="Password" id="Password"
+                           pattern=".+@globex.com" required><br>
+                </div>
+
+
+                <div class="kasse kassesubmit" >
+                    <input class="knap" type="submit" value="Login">
+                </div>
+
+            </form>
+        </div>
+
+<p>Har du ikke en bruger kan du registrer  </p>
+
+        <div class="ekstra" >
+            <a href="/userCreation">Registrer</a>
+        </div>
+
+        <div th:replace="footer">...</div>
 </body>
 </html>

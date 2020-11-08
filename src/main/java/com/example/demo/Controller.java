@@ -26,6 +26,12 @@ public class Controller {
         return ("user");
     }
 
+        @GetMapping("/login")
+        public String login() {
+            return ("login");
+
+    }
+
     //bruger
 
     @GetMapping("/findUsers")

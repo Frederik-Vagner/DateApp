@@ -7,31 +7,64 @@
     <title>Title</title>
     <style>
 
-    .flexbox-container {
-    display: flex;
-    flex-wrap: wrap;
+        .flexbox-container {
+            display: flex;
+            flex-wrap: wrap;
 
 
-    }
-    .flexbox-item {
-    width: 300px;
-    height: 400px;
-    margin: 10px;
-    background-color: #578e57;
-    opacity: 90%;
-    text-align: center;
-    border-radius: 14px;
-    }
+        }
+        .flexbox-item {
+            width: 300px;
+            height: 400px;
+            margin: 10px;
+            background-color: #578e57;
+            opacity: 90%;
+            text-align: center;
+            border-radius: 14px;
+        }
+        #section_top10 {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+        .img {
+            width: 300px;
+            height: 100px;
+            margin: 10px;
+            background-color: #578e57;
+            opacity: 90%;
+            text-align: center;
+            border-radius: 14px;
+            margin-left: auto;
+            margin-right: auto;
+
+        }
+
     </style>
 </head>
 <body>
 <div th:replace="headerUser">...</div>
-<h3>Beskeder</h3>
-<div class="flexbox-container">
-    <div class="flexbox-item"><h2>Modtaget</h2></div>
-    <div class="flexbox-item"><h2>Sendt</h2></div>
 
-</div>
+<section id="section_top10">
+    <div class=“ydre_div”>
+        <h1 style="text-align: center">Beskeder</h1>
+        <div class="img">
+            <a href="/sendBesked"><img src="/images/Send.png"  height="100pxpx" width="125px"/></a>
+        </div>
+        <div class="flexbox-container">
+            <div class="flexbox-item"><h3>Modtaget</h3></div>
+            <div class="flexbox-item"><h3>Sendt</h3></div>
+        </div>
+
+    </div>
+
+    <div class="ydre_div">
+        <br><br>
+        <p>HAAAAAA</p>
+    </div>
+</section>
+
+
 <div th:replace="footer">...</div>
 </body>
 </html>

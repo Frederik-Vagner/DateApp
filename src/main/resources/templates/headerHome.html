@@ -7,15 +7,8 @@
     <style>
 
         .container{
-            clear:both;
-            overflow:auto;
-            background-color: #90bb90;
-        }
-
-        nav{
-
-            float:right;
-            margin-right: 50px;
+            height: 300px;
+            width: 100%;
         }
 
         .logo img{
@@ -25,21 +18,12 @@
 
         }
 
-        ul li{
-            display: inline-block; padding:10px;
-            font-size:20px;
-            margin-right: 40px;
-            margin-top: 60px;
-        }
-        ul li a {
-            color: black;
-            text-decoration: none;
+
+        .button a:link, a:visited {
+           align-content: center;
+            margin-left: 200px;
         }
 
-        ul li:visited{
-            color: black;
-            text-decoration: none;
-        }
 
 
     </style>
@@ -51,14 +35,10 @@
         <div class="logo">
             <a href="/home"><img src="/images/hund.png" alt="logo" height="200px" width="400"/></a>
         </div>
-        <nav>
-            <ul>
-                <li><a href="/administrator">Administrator</a></li>
-                <li><a href="/user" >User</a></li>
-            </ul>
-        </nav>
+        <div class="button">
+            <a href="/login"><img src="/images/login.png" alt="logo" height="200px" width="400"/></a>
+        </div>
     </div>
-    <hr />
 </div>
 </body>
 </html>
